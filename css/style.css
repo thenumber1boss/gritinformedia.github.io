@@ -1537,6 +1537,9 @@ padding-left:;
   overflow: hidden;
 }
 
+.hide {
+  display: none;
+}
 #article-container.active {
   pointer-events: auto;
 }
