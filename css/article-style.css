@@ -163,13 +163,14 @@
 }
 
 
-.blog-article-footer p, h1, li, h3 {
+.blog-article-footer p, h1, h3 {
 	padding-left: 80px;
 	padding-right: 80px;
 }
 
+
 @media (max-width: 768px) {
-	.blog-article-footer p, h1, li, h3 {
+	.blog-article-footer p, h1, h3 {
 	padding-left: 20px;
 	padding-right: 20px;
  }
@@ -178,14 +179,21 @@
 
 .article-related-content {
 	padding-bottom: 20px;
+	padding-left: 40px;
 }
 
 .article-related-content a {
-	color: darkblue;	
+	color: darkblue;
+
 }
 
 .article-related-content h3 {
 	font-size: 18px;
+
+}
+
+.article-related-content ul {
+	list-style: none;
 
 }
 
