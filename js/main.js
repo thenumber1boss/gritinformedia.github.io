@@ -207,28 +207,47 @@ $(document).ready(function(){
       });
     });
 
-//blog articles
+ //blog articles
+    // Define the base URL or path to the folder containing the article files
+    var articleBasePath = 'articles/'; // Relative path from the root folder
 
-$(document).ready(function() {
-  $('.clickable-article').click(function() {
-    if (!$('#article-container').hasClass('active')) {
-      var article = $(this).data('article');
-      var articleContent = $('#' + article + '-content').html();
-      $('#article-content').html(articleContent);
-      $('#article-container').removeClass('hidden').addClass('active');
-      $('body').addClass('main-page-inactive');
-      $('.inactive-overlay').addClass('active');
-    }
-  });
+    $(document).ready(function () {
+        $('.clickable-article').click(function () {
+            if (!$('.inform-container').hasClass('active')) {
+                var article = $(this).data('article');
+                var articleURL = articleBasePath + article + '.html';
 
-  $('#close-button').click(function() {
-    $('#article-container').addClass('hidden').removeClass('active');
-    $('#article-content').html('');
-    $('body').removeClass('main-page-inactive');
-    $('.inactive-overlay').removeClass('active');
-  });
-});
+                // Use AJAX to fetch the article content from the separate file
+                $.ajax({
+                    url: articleURL,
+                    type: 'GET',
+                    dataType: 'html',
+                    success: function (response) {
+                        // Update the #article-content with the fetched content
+                        $('#article-content').html(response);
 
+                        // Show the article container
+                        $('#article-container').removeClass('hidden').addClass('active');
+
+                        // Add the overlay and make the main page inactive
+                        $('body').addClass('main-page-inactive');
+                        $('.inactive-overlay').addClass('active');
+                    },
+                    error: function () {
+                        // Handle error if the article file cannot be loaded
+                        console.error('Error loading article content.');
+                    }
+                });
+            }
+        });
+
+        $('#close-button').click(function () {
+            $('#article-container').addClass('hidden').removeClass('active');
+            $('#article-content').html('');
+            $('body').removeClass('main-page-inactive');
+            $('.inactive-overlay').removeClass('active');
+        });
+    });
 
 
 
