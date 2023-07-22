@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: darkblue;
+  color: #666666;
 }
 
 a:hover, a:active, a:focus {
@@ -70,6 +70,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding-right: 5px;
   padding-left: 0;
+  color: rgba(12, 20, 43, 1.0);
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -81,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .breadcrumb-item + .breadcrumb-item::before {
   content: "›"; /* You can change the separator symbol as desired */
-  margin: 0 8px; /* Adjust the spacing between items and separator */
+  margin: 0 4px; /* Adjust the spacing between items and separator */
 }
 
 @media (max-width: 768px) {
@@ -1557,6 +1558,7 @@ padding-left:;
 }
 
 #article-content {
+  position: relative;
     max-width: 800px;
   background-color: #F8F8F8;
   color: #333;
@@ -1585,6 +1587,34 @@ padding-left:;
 
 #close-button {
   position: absolute;
+  top: 40px;
+  right: 300px;
+  color: #fff;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  left: yes;
+ }
+
+ @media (max-width: 992px) {
+  #close-button {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  color: #fff;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+    transform: translateX(150px);
+  }
+ }
+
+
+@media (max-width: 540px) {
+#close-button {
+  position: absolute;
   top: 20px;
   right: 20px;
   color: #fff;
@@ -1592,7 +1622,10 @@ padding-left:;
   background-color: transparent;
   border: none;
   cursor: pointer;
+ }
 }
+
+
 .hide {
   display: none;
 }
@@ -1622,120 +1655,35 @@ padding-left:;
 }
 
 
-/* Services Section
---------------------------------*/
-#services {
-  background: #fff;
-  background-size: cover;
-  padding: 80px 0 0 0;
-}
-
-#services .box {
-  padding: 50px 20px;
-  margin-bottom: 50px;
-  text-align: center;
-  border: 1px solid #800000;
-  height: 235px;
-  position: relative;
-  background: #fafafa;
-}
-
-#services .icon {
-  position: absolute;
-  top: -36px;
-  left: calc(50% - 36px);
-  transition: 0.2s;
-  border-radius: 50%;
-  display: inline-block;
-  border: 6px solid #fff;
-}
-
-#services .icon a {
-  display: inline-block;
-  background: #800000;
-  border: 2px solid #800000;
-  padding: 16px;
-  border-radius: 50%;
-  transition: 0.3s;
-}
-
-#services .icon i {
-  color: #fff;
-  font-size: 24px;
-}
-
-#services .box:hover .icon i {
-  color: #800000;
-}
-
-#services .box:hover .icon a {
-  color: #800000;
-  background: #fff;
-}
-
-#services .title {
-  font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-}
-
-#services .title a {
-  color: #111;
-}
-
-#services .description {
-  font-size: 14px;
-  line-height: 24px;
-}
-
-/* Call To Action Section
---------------------------------*/
-#call-to-action {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/call2.jpg) fixed center center;
-  background-size: cover;
-  padding: 16px 0;
-  padding-bottom: 10px;
-}
-
-#call-to-action .cta-title {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-#call-to-action .cta-text {
-  color: #fff;
-}
-
-@media (min-width: 769px) {
-  #call-to-action .cta-btn-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-}
-
-#call-to-action .cta-btn {
+.explore-btn {
   font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 8px 30px;
-  border-radius: 50px;
+  border-radius: 10px;
   transition: 0.5s;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.7);
   margin: 10px;
+  margin-top: 20px;
   border: 2px solid #800000;
   color: #fff;
   background: #800000;
 }
 
-#call-to-action .cta-btn:hover {
+@media (max-width: 540px) {
+  .explore-btn {
+    margin-top: -2px;
+  }
+}
+.explore-btn:hover {
   background: #800000;
   border: 2px solid #fff;
+  color: #fff;
 }
+
+
 
 
 /* Contact Section
@@ -1743,55 +1691,6 @@ padding-left:;
 #contact {
   background: #f7f7f7;
   padding: 80px 0 40px 0;
-}
-
-#contact #google-map {
-  height: 300px;
-  margin-bottom: 20px;
-}
-
-#contact .info {
-  color: #333333;
-}
-
-#contact .info i {
-  font-size: 32px;
-  color: #800000;
-  float: left;
-}
-
-#contact .info p {
-  padding: 0 0 10px 50px;
-  margin-bottom: 20px;
-  line-height: 22px;
-  font-size: 14px;
-}
-
-#contact .info .email p {
-  padding-top: 5px;
-}
-
-#contact .social-links {
-  padding-bottom: 20px;
-}
-
-#contact .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #333;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
-
-#contact .social-links a:hover {
-  background: #800000;
-  color: #fff;
 }
 
 #contact .form #sendmessage {
@@ -1833,7 +1732,7 @@ padding-left:;
 }
 
 #contact .form button[type="submit"] {
-  background: #333333;
+  background-color: rgba(12, 20, 43, 1.0);
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1845,10 +1744,114 @@ padding-left:;
 }
 
 /*--------------------------------------------------------------
+# Pre-Footer
+--------------------------------------------------------------*/
+/* Prefooter Section Styles */
+#prefooter {
+  padding: 40px 0;
+  margin-bottom: -8px;
+  margin-right: 3px;
+  margin-left: 3px;
+  background-image: url("/img/pre-footer.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pre-cover {
+  background-color: rgba(250, 250, 250, 0.5);
+  padding: 15px;
+  padding-top: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 1.0);
+}
+
+
+#prefooter h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(12, 20, 43, 1.0);
+}
+
+
+#prefooter ul {
+  list-style: none;
+  padding: 0;
+}
+
+#prefooter li {
+  margin-bottom: 20px;
+}
+
+#prefooter li i {
+  margin-right: 10px;
+}
+
+.pre-footer-social-media {
+  list-style: none;
+  padding: 0;
+  color: rgba(12, 20, 43, 1.0);
+}
+
+.reach-us i {
+  color: rgba(12, 20, 43, 1.0);
+}
+
+.pre-footer-social-media li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.pre-footer-social-media li i {
+  margin-right: 10px;
+}
+
+.pre-footer-social-Qlinks {
+
+}
+
+#pre-footer-newsletter {
+  display: flex;
+  align-items: center;
+}
+
+/* Newsletter Form Styles */
+#newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#newsletter-form .form-group {
+  flex: 1;
+  margin-right: 10px;
+}
+
+#newsletter-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#newsletter-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(12, 20, 43, 1.0);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #343b40;
+  background: rgba(12, 20, 43, 1.0);
   padding: 30px 0;
   color: #fff;
   font-size: 14px;
