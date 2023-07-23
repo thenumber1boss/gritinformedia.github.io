@@ -65,6 +65,12 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 80px;
 }
 
+@media (max-width: 992px) {
+  .breadcrumb {
+    display: none;
+  }
+}
+
 .breadcrumb-item {
   font-size: 12px;
   margin: 0;
@@ -1770,6 +1776,8 @@ padding-left:;
 #prefooter h4 {
   font-size: 20px;
   font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 15px;
   color: rgba(12, 20, 43, 1.0);
 }
 
@@ -1780,7 +1788,16 @@ padding-left:;
 }
 
 #prefooter li {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+    font-size: 15px;
+
+}
+
+@media (max-width: 768px) {
+  #prefooter li {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
 }
 
 #prefooter li i {
@@ -1937,3 +1954,167 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 
+
+
+/* Styles for Pages */
+
+
+.pages-banner-section {
+  position: relative;
+}
+
+.img-fluid {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+
+.overlay-pages {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+ 
+  background: linear-gradient(400deg, rgba(173, 216, 230, 1) 10%, rgba(173, 216, 230, 0) 100%);
+}
+
+.pages-banner-content {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.pages-banner-heading {
+  font-size: 60px;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 1.0);
+  font-weight: 700;
+  color: white;
+  text
+}
+
+.pages-banner-subheading {
+  font-size: 24px;
+  color: rgba(12, 20, 43, 1.0);
+  font-weight: 500;
+}
+
+.pages-body {
+  margin: -100px 100px 0 100px;
+  z-index: 20;
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .pages-banner-heading {
+    font-size: 40px;
+  }
+  .pages-banner-subheading {
+    font-size: 20px;
+  }
+    .img-fluid {
+    height: 40vh;
+    object-fit: cover; /* Adjust the height as needed for small screens */
+  }
+  .pages-body {
+  margin: -100px 50px 0 50px;
+  z-index: 20;
+  position: relative;
+ }
+}
+
+@media (max-width: 768px) {
+  .img-fluid {
+    height: 50vh;
+      object-fit: cover;
+  }
+    .pages-body {
+  z-index: 20;
+  position: relative;
+ }
+}
+
+
+@media (max-width: 540px) {
+  .pages-banner-section{
+    height: 40%;
+    width: auto;
+  }
+  .pages-banner-heading {
+    font-size: 24px;
+  }
+  .pages-banner-subheading {
+    font-size: 10px;
+  }
+  .pages-banner-content {
+    text-align: right;
+      top: 70%;
+  left: 50%;
+  transform: translate(-30%, -50%);
+  }
+}
+
+
+@media (max-width: 450px) {
+  .pages-body {
+    margin: -50px 20px 20px;
+  }
+}
+
+
+/* Styles for the content boxes */
+.content-box {
+  border: 2px solid #ccc;
+  padding: 10px;
+}
+
+.centered-content {
+  text-align: left;
+}
+
+.content-image {
+  width: 100%; /* Set a fixed width as needed for the images */
+  max-height: 300px; /* Set a maximum height for the images */
+  object-fit: cover;
+}
+
+.content-box h3 {
+  font-size: 24px;
+  color: rgba(12, 20, 43, 1.0);
+  padding-top: 30px;
+  font-weight: 500;
+}
+
+
+.content-box h3:hover {
+  color: maroon;
+}
+
+.content-box p {
+  padding: 20px;
+}
+
+
+.btn-get-quote {
+  background: rgba(12, 20, 43, 1.0);
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  margin-bottom: 60px;
+}
+
+.btn-get-quote:hover {
+  background-color: #b3c0d6;
+}
+
+/* Adjust the button style for smaller screens */
+@media (max-width: 768px) {
+  .btn-get-quote {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+  }
+}
