@@ -689,7 +689,7 @@ h1, h2, h3, h4, h5, h6 {
   left: -260px;
   width: 260px;
   overflow-y: auto;
-  transition: 0.4s;
+  transition: 1.2s;
 }
 
 #mobile-nav ul {
@@ -746,7 +746,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.1);
   display: none;
 }
 
@@ -756,7 +756,10 @@ body.mobile-nav-active {
 }
 
 body.mobile-nav-active #mobile-nav {
-  left: 0;
+  left: 10px;
+  top: 110px;
+  bottom: 10px;
+  border-radius: 10px;
 }
 
 body.mobile-nav-active #mobile-nav-toggle {
@@ -796,15 +799,6 @@ body.mobile-nav-active #mobile-nav-toggle {
       margin-bottom: 50px;
     }
 
-     .what-carousel-heading {
-      font-size: 32px;
-      color: maroon;
-      font-weight: bolder;
-      text-align: center;
-      margin-top: 50px;
-      margin-bottom: 50px;
-      font-family: "Poppins", sans-serif;
-    }
     .what-carousel ul {
       list-style: none;
       width: 2100px;
@@ -866,6 +860,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: block;
   margin-bottom: 50px;
   padding-top: 20px;
+}
+
+#about a {
+  color: skyblue;
+}
+
+#about a:hover {
+  color: maroon;
 }
 
 @media (max-width: 768px) {
@@ -1260,10 +1262,10 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
 
     .client-name {
-      font-size: 18px;
+      font-size: 15px;
       font-weight: bold;
       margin-top: auto;
-      padding-left: 0;
+      padding: 10px;
     }
 
     /* Media query for smaller screens */
@@ -1380,15 +1382,15 @@ body.mobile-nav-active #mobile-nav-toggle {
       width: 300px;
       display: flex;
       flex-direction: column;
-      font-size: 16px;
+      font-size: 14px;
       font-family: "Poppins", sans-serif;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding-top: 40px;
+      padding-top: 20px;
       padding-left: 10px;
       padding-right: 10px;
-      padding-bottom: 20px;
+      padding-bottom: 10px;
       margin: 0 auto;
       transition: 0.5s;
       box-shadow: 4 6px 10px rgba(0, 0, 0, 0.9);
@@ -2060,7 +2062,7 @@ img {vertical-align: middle;}
 
 @media (max-width: 450px) {
   .pages-body {
-    margin: -50px 20px 20px;
+    margin: -50px 10px 10px;
   }
 }
 
@@ -2117,4 +2119,12 @@ img {vertical-align: middle;}
     padding: 10px 20px;
     margin-bottom: 30px;
   }
+
+  .content-box {
+  border: 2px solid #ccc;
+  padding: 5px;
+}
+  .content-box p {
+  padding: 10px;
+}
 }
