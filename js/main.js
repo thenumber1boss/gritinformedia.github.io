@@ -209,7 +209,7 @@ $(document).ready(function(){
 
  //blog articles
     // Define the base URL or path to the folder containing the article files
-    var articleBasePath = 'articles/'; // Relative path from the root folder
+    var articleBasePath = '/articles/'; // Relative path from the root folder
 
     $(document).ready(function () {
         $('.clickable-article').click(function () {
@@ -248,6 +248,11 @@ $(document).ready(function(){
             $('.inactive-overlay').removeClass('active');
         });
     });
+    
+
+
+    // yt-video embed
+
 
 
 
