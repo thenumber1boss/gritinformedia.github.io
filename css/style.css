@@ -2107,6 +2107,11 @@ img {vertical-align: middle;}
   z-index: 20;
   position: relative;
  }
+   .pages-body {
+  margin: -50px 50px 0 50px;
+  z-index: 20;
+  position: relative;
+ }
 }
 
 
@@ -2132,7 +2137,7 @@ img {vertical-align: middle;}
 
 @media (max-width: 450px) {
   .pages-body {
-    margin: -50px 10px 10px;
+    margin: -20px 10px 10px;
   }
 }
 
@@ -2200,3 +2205,234 @@ img {vertical-align: middle;}
 }
 }
 
+
+/* infomred tv page */
+
+
+  .custom-container {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    /* Responsive rules for the custom container class */
+    @media (min-width: 576px) {
+      .custom-container {
+        max-width: 540px; /* Adjust as needed */
+      }
+    }
+    @media (min-width: 768px) {
+      .custom-container {
+        max-width: 720px; /* Adjust as needed */
+      }
+    }
+    @media (min-width: 992px) {
+      .custom-container {
+        max-width: 960px; /* Adjust as needed */
+      }
+    }
+    @media (min-width: 1200px) {
+      .custom-container {
+        max-width: 1140px; /* Adjust as needed */
+      }
+    }
+
+    /* Overlay styles */
+    .image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+      display: flex;
+      flex-direction: column;
+     transition: background-color 0.6s ease;
+    }
+
+    .image-overlay:hover  {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .image-overlay-center {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin: 5px;
+      text-shadow: 3px 2px 3px black;
+    }
+    .image-overlay-bottom {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 5px;
+    }
+    .image-overlay-bottom-date {
+      color: #fff;
+      font-size: 11px;
+      margin: 0 10px 10px;
+    }
+
+    .image-overlay-bottom-type {
+      color: #fff;
+      font-size: 11px;
+      margin: 0 20px 10px;
+      font-weight: 700;
+    }
+
+    /* Set a fixed height for the images and overlay */
+    .tv-img-contain {
+      position: relative;
+      height: 200px; /* Adjust the height as needed */
+      overflow: hidden;
+      border-radius: 3px;
+    }
+    .img-overlay {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* Add spacing between rows and margins between containers */
+    .row-spacing {
+      margin-bottom: 10px; /* Adjust the spacing between rows as needed */
+    }
+
+    .col-margin {
+      margin-bottom: 10px;
+    }
+
+
+    /* style type */
+
+    .health {
+      padding: 2px 15px 2px 15px;
+      background-color: green;
+      border-radius: 10px 0; 
+    }
+
+  .weekend-vibes {
+     padding: 2px 15px 2px 15px;
+      background-color: red;
+      border-radius: 10px 0; 
+  } 
+  .tech {
+      padding: 2px 15px 2px 15px;
+      background-color: blue;
+      border-radius: 10px 0; 
+  } 
+  .fashion {
+      padding: 2px 15px 2px 15px;
+      background-color: orange;
+      border-radius: 10px 0; 
+  }
+
+  .fitness{
+      padding: 2px 15px 2px 15px;
+      background-color: brown;
+      border-radius: 10px 0; 
+  }
+
+
+
+    /* construction container styles */
+    .construction-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 500px; /* Set the container height as needed */
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 40px;
+      background-color: skyblue;
+      opacity: 0.8;
+      box-shadow: 2px 4px 6px black;
+    }
+    .icon {
+      font-size: 150px;
+      margin-bottom: 10px;
+      animation: rotateIcon 2s infinite linear;
+      color: rgba(12, 20, 43, 1);
+    }
+    .heading {
+      font-size: 36px;
+      font-weight: bold;
+      color: white;
+      text-shadow: 3px 2px 3px black;
+    }
+
+
+
+    /* CSS Animation for rotating the icon */
+    @keyframes rotateIcon {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .block-container {
+  display: flex;
+  align-items: center;
+}
+
+.block {
+  width: 30px;
+  height: 15px;
+  background-color: rgba(12, 20, 43, 1);
+  margin: 10px;
+  opacity: 0;
+}
+
+@keyframes blockAnimation {
+  0% { opacity: 0; }
+  25% { opacity: 1; }
+  75% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+    /* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .construction-container {
+    height: 300px; /* Adjust the container height for smaller screens */
+  }
+
+  .icon {
+    font-size: 100px; /* Reduce the icon size for smaller screens */
+  }
+
+  .heading {
+    font-size: 24px; /* Reduce the heading size for smaller screens */
+  }
+
+  .block {
+  width: 20px;
+  height: 10px;
+}
+
+@media (max-width: 540px) {
+  .construction-container {
+    height: 300px; /* Adjust the container height for smaller screens */
+  }
+
+  .icon {
+    font-size: 100px; /* Reduce the icon size for smaller screens */
+  }
+
+  .heading {
+    font-size: 20px; /* Reduce the heading size for smaller screens */
+  }
+
+  .block {
+  width: 10px;
+  height: 5px;
+}
