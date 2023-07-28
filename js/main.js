@@ -251,8 +251,20 @@ $(document).ready(function(){
     
 
 
-    // yt-video embed
+    // construction
 
+const blocks = document.querySelectorAll('.block');
+
+function startAnimation() {
+  let delay = 0;
+  blocks.forEach((block, index) => {
+    block.style.animation = 'blockAnimation 2s infinite';
+    block.style.animationDelay = `${delay}s`;
+    delay += 0.2; // Adjust the delay to control the animation speed
+  });
+}
+
+startAnimation();
 
 
 
