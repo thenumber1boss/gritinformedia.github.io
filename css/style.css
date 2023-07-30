@@ -1212,7 +1212,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
     .testimonial-box {
-      width: 310px;
       height: 320px;
       background-color: white;
       margin: 0 auto;
@@ -1220,6 +1219,7 @@ body.mobile-nav-active #mobile-nav-toggle {
       align-items: center;
       display: flex;
       padding-top: 20px;
+      margin-left: 20px;
     }
 
     .testimonial-content {
@@ -1293,6 +1293,7 @@ body.mobile-nav-active #mobile-nav-toggle {
          margin-left: auto; /* Add this line to center the carousel content */
          margin-right: auto;
          margin-top: 0;
+         margin-left: 15px;
       }
             .slick-prev,
       .slick-next {
@@ -1439,7 +1440,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
     }
 
-    @media (max-width: 450px) {
+    @media (max-width: 540px) {
        .testimonial-box {
         background-color: transparent;
        }
@@ -1474,7 +1475,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   overflow: hidden;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 540px) {
   .inform-container .col-lg-4,
   .inform-container .col-md-6 {
     margin-bottom: 20px;
