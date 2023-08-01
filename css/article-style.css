@@ -214,6 +214,14 @@
 	padding-right: 80px;
 }
 
+.blog-article-footer a {
+	color: darkblue;
+	text-transform: uppercase;
+}
+
+.blog-article-footer a:hover {
+	color: maroon;
+}
 
 @media (max-width: 768px) {
 	.blog-article-footer {
