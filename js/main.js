@@ -267,6 +267,29 @@ function startAnimation() {
 startAnimation();
 
 
+//FAQ
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const questionElements = document.querySelectorAll(".question");
+
+  questionElements.forEach(function (question) {
+    const toggleElement = question.querySelector(".toggle");
+    const answerElement = question.nextElementSibling;
+
+    question.addEventListener("click", function () {
+      if (answerElement.style.display === "none" || answerElement.style.display === "") {
+        answerElement.style.display = "block";
+        toggleElement.textContent = "-";
+      } else {
+        answerElement.style.display = "none";
+        toggleElement.textContent = "+";
+      }
+    });
+  });
+});
+
+
 
  // footercurrent year
     var currentYear = new Date().getFullYear();
