@@ -8,7 +8,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-
 @media (max-width: 540px) {
   body {
     background: linear-gradient(to bottom, #93BFDA 0%, white 5%);
