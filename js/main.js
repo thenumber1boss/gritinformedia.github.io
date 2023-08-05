@@ -267,7 +267,7 @@ function startAnimation() {
 startAnimation();
 
 
-//FAQ
+//FAQ section
 
 
 document.addEventListener("DOMContentLoaded", function () {
