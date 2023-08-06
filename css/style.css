@@ -1503,6 +1503,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
      cursor: pointer;
      height: 60px;
+    overflow: hidden;
 }
 
 
@@ -1516,17 +1517,29 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 16px;
   margin: 10px;
 }
+
+ .answer p {
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .bg1 .answer {
-    display: none;
-    margin: 10px;
-    font-size: 14px;
+  display: block;
+  overflow: hidden;
+  max-height: 0;
+  font-size: 14px;
   color: rgba(240, 240, 240, 0.6);
+  transition: max-height 0.5s ease;
 }
 .bg2 .answer {
-    display: none;
-    margin: 10px;
-    font-size: 14px;
+  display: block;
+  overflow: hidden;
+  max-height: 0;
+  font-size: 14px;
+  transition: max-height 0.5s ease;
 }
+
 
 .toggle {
     font-size: 20px;
@@ -1536,6 +1549,8 @@ body.mobile-nav-active #mobile-nav-toggle {
          width: 20px;
      text-align: center;
 }
+
+
 
 @media (max-width: 998px) {
   .question {
