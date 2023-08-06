@@ -277,17 +277,24 @@ document.addEventListener("DOMContentLoaded", function () {
     const toggleElement = question.querySelector(".toggle");
     const answerElement = question.nextElementSibling;
 
+    // Initially hide the answer elements with small max-height
+    answerElement.style.maxHeight = "1px";
+
     question.addEventListener("click", function () {
-      if (answerElement.style.display === "none" || answerElement.style.display === "") {
-        answerElement.style.display = "block";
+      if (answerElement.style.maxHeight === "1px") {
+        // Show the answer with the sliding animation
+        answerElement.style.maxHeight = answerElement.scrollHeight + "px";
         toggleElement.textContent = "-";
       } else {
-        answerElement.style.display = "none";
+        // Hide the answer with the sliding animation
+        answerElement.style.maxHeight = "1px";
         toggleElement.textContent = "+";
       }
     });
   });
 });
+
+
 
 
 
