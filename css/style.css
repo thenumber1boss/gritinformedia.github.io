@@ -1450,10 +1450,126 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
 
 
+        /* Pricing Section
+--------------------------------*/
+.pricing-container{
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+  .pricing-row {
+    margin-bottom: 20px;
+    padding-top: 30px;
+  }
+
+  /* Style for plan cards */
+  .plan-card {
+    font-family: "Poppins", sans-serif;
+    height: 460px;
+    border: 1px solid #ccc;
+    text-align: left;
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+    margin-bottom: 0.5px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-title {
+    font-size: 24px;
+    padding-top: 10px;
+    color: maroon;
+  }
+
+  .card-text {
+    height: 100px;
+  }
+
+    .price-title {
+    font-size: 24px;
+    color: #007bff;
+    font-weight: 900;
+    padding: 0;
+  }
+
+
+  .plan-card .card-text {
+    font-size: 16px;
+  }
+
+  .plan-card .btn-primary {
+    background-color: rgba(12, 20, 43, 1);
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+  }
+
+  /* Style for price cards */
+  .price-card {
+    height: 60px;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 0 0 0 0;
+    margin-bottom: 0.5px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .price-card .card-body {
+  padding-right: 2px;
+  padding-left: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  }
+
+  /* Style for feature cards */
+  .feature-card {
+    font-family: "Poppins", sans-serif;
+    height: 350px;
+    border: 1px solid #ccc;
+    text-align: left;
+    border-radius: 0 0 20px 20px;
+    padding: 0;
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  .feature-card ul {
+    list-style-type: none;
+    padding-right: 5px;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .feature-card li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .feature-card li::before {
+    content: "\f00c"; /* FontAwesome checkmark icon */
+    font-family: FontAwesome;
+    position: absolute;
+    left: -25px;
+    top: 2px;
+    color: #007bff;
+  }
+
+  .ikon {
+    font-size: 30px;
+    color: rgba(12, 20, 43, 0.9);
+  }
+
+  .p-ikon {
+    font-size: 20px;
+    color: rgba(12, 20, 43, 0.9);
+    font-weight: 5000;
+  }
+
+
+
 /* FAQ Section
 --------------------------------*/
 
-/* styles.css */
 
 .tn {
   position: relative;
