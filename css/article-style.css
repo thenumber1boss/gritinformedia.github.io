@@ -68,7 +68,7 @@
 	background-color: lightblue;
 	margin-right: 200px;
 	margin-left: 200px;
-	margin-top: -30px;
+	margin-top: -140px;
 	z-index: 996;
 	max-width: 900px;
 	position: relative;
@@ -82,7 +82,22 @@
 	background-color: lightblue;
 	margin-right: 80px;
 	margin-left: 80px;
-	margin-top: -30px;
+	margin-top: -70px;
+	z-index: 996;
+	max-width: 800px;
+	position: relative;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+ }
+}
+
+@media (max-width: 798px) {
+	.blog-article-body-2 {
+	background-color: lightblue;
+	margin-right: 40px;
+	margin-left: 40px;
+	margin-top: -100px;
 	z-index: 996;
 	max-width: 800px;
 	position: relative;
@@ -96,7 +111,7 @@
 	background-color: lightblue;
 	margin-right: 20px;
 	margin-left: 20px;
-	margin-top: -30px;
+	margin-top: -40px;
 	z-index: 996;
 	max-width: 800px;
 	position: relative;
@@ -108,6 +123,7 @@
 
 .blog-article-title {
 	font-size: 32px;
+	color: rgba(0, 0, 0, 0.8);
 	font-weight: 700;
 	font-family: "Poppins", sans-serif;;
 	padding-left: 80px;
@@ -116,6 +132,7 @@
 }
 .blog-article-sub-title {
 	font-size: 28px;
+	color: rgba(0, 0, 0, 0.8);
 	font-weight: 500;
 	font-family: "Poppins", sans-serif;;
 	padding-left: 80px;
@@ -123,7 +140,7 @@
 	margin-top: -10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 798px) {
 	.blog-article-title {
 	font-size: 24px;
 	font-weight: 700;
@@ -201,9 +218,17 @@
 	padding-right: 80px;
 }
 
+.blog-article-content h1,h2,h3,h4,h5,h6,ul,ol {
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.blog-article-content p {
+	color: rgba(0, 0, 0, 0.7);
+}
+
 .blog-article-content a {
 	color: darkblue;
-	text-transform: uppercase;
+	text-decoration: underline;
 }
 
 .blog-article-content a:hover {
@@ -211,7 +236,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 798px) {
 	.blog-article-content {
 	padding-left: 20px;
 	padding-right: 20px;
@@ -235,17 +260,21 @@
 	padding-left: 80px;
 	padding-right: 80px;
 }
+.blog-article-footer p {
+	color: rgba(0, 0, 0, 0.7);
+}
+
 
 .blog-article-footer a {
 	color: darkblue;
-	text-transform: uppercase;
+	text-decoration: underline;
 }
 
 .blog-article-footer a:hover {
 	color: maroon;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 798px) {
 	.blog-article-footer {
 	padding-left: 20px;
 	padding-right: 20px;
@@ -258,7 +287,7 @@
 	padding-left: 80px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 798px) {
 	.article-related-content {
 	padding-bottom: 20px;
 	padding-left: 20px;
