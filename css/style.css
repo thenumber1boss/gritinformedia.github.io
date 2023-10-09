@@ -1521,7 +1521,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   /* Style for feature cards */
   .feature-card {
     font-family: "Poppins", sans-serif;
-    height: 350px;
+    height: 430px;
     border: 1px solid #ccc;
     text-align: left;
     border-radius: 0 0 20px 20px;
