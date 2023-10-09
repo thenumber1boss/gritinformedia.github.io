@@ -92,31 +92,102 @@
     </div>
   </div>
 
-<div class="pages-body">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">contact</li>
-      </ol>
-      </nav>   
-       <div class="construction-container">
-    <div class="icon">
-      <i class="fas fa-tools"></i> <!-- Replace "fa-tools" with the appropriate Font Awesome icon class -->
+
+      <div class="container mt-5">
+    <div class="row mt-4">
+   <!-- Social Media Cards -->
+<div class="col-md-4 mb-4 wow fadeInUp" data-wow-delay="0.4s">
+    <div class="card contact-card">
+        <img src="/img/social-contact.png" alt="Social Media" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">Connect on Social Media</h5>
+            <p class="card-text">Follow us on Facebook, LinkedIn, Instagram, and YouTube for updates and news.</p>
+            <div class="row">
+                <div class="col-6">
+                    <ul class="list-unstyled">
+                        <li><i class="fab fa-facebook"></i> <a href="https://facebook.com/tv.informed">Facebook</a></li>
+                        <li><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/company
+/gritinformedia">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <ul class="list-unstyled">
+                        <li><i class="fab fa-instagram"></i> <a href="https://instagram.com/tv.informed">Instagram</a></li>
+                        <li><i class="fab fa-youtube"></i> <a href="https://youtube.com/@gritinformedia">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="heading">
-      Page Under Construction
-    </div>
-    <div class="block-container">
-    <div class="block"></div>
-    <div class="block"></div>
-    <div class="block"></div>
-    <div class="block"></div>
-    <div class="block"></div>
-    <div class="block"></div>
-  </div>
-  </div>
-      
 </div>
+
+        <!-- WhatsApp and Phone Cards -->
+        <div class="col-md-4 mb-4 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="card contact-card">
+                <img src="/img/call-whatsapp.png" alt="WhatsApp and Phone" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">WhatsApp & Phone</h5>
+                    <p class="card-text">Need quick assistance or require a service? Reach out via WhatsApp or give us a call.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/+2348130583250">WhatsApp</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+2348131140937">Phone</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Physical Addresses Cards -->
+        <div class="col-md-4 mb-4 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="card contact-card">
+                <img src="/img/map.png" alt="Physical Addresses" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Visit Us</h5>
+                    <p class="card-text">Find us at our offices in Abuja and Minna.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i> Abuja: Plot 43b Ishaya Shekari Crescent 2nd Avenue Gwarimpa.</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Minna: Opposite Sani Basket plaza bosso road.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="row" id="contact">
+        <div class="col-md-6 offset-md-2 mx-auto wow fadeInUp" data-wow-delay="0.4s">
+            <div class="card contact-card">
+                <img src="/img/feedback.png" alt="Contact Form" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Send Us a Message</h5>
+                    <p class="card-text">We typically respond within minutes. Your feedback is valuable to us.</p>
+                    <div class="form">
+              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <form action="https://formspree.io/f/xdorkwja" method="POST">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
  
 
         </div>
@@ -124,7 +195,7 @@
   </main>
 
 
-        <!--==========================
+    <!--==========================
     Pre-Footer
   ============================-->
 
