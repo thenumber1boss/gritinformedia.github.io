@@ -1,0 +1,292 @@
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            height: 100%;
+        }
+
+        body h1, h2, h3, h4, h5, h6, p, ol {
+            margin-top: 0;
+        }
+
+        .padding-top {
+            padding-top: 40px;
+        }
+
+        .hr-space-top {
+            margin-top: 40px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        header {
+            position: fixed;
+            right: 0;
+            left: 0;
+            top: 0;
+            background-color: rgba(41, 171, 226, 0.05);
+            color: #252424;
+            padding: 10px 40px;
+            display: flex;
+            height: 100px;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #29abe2;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 5px #29abe2;
+            z-index: 999;
+        }
+
+        .logo-invest {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 55%;
+        }
+
+        #logo {
+            width: 100px; /* Adjust the size as needed */
+            height: auto;
+        }
+
+        #investNowBtn {
+            background-color: #f98500;
+            color: #000;
+            padding: 10px 25px;
+            border: 1px solid #f98500;
+            border-radius: 2px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.5s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        #investNowBtn:hover {
+            background-color: #ffa500;
+            color: #fff;
+        }
+
+        #contactInfo {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            align-content: space-between;
+            justify-content: space-between;
+        }
+
+        #contactInfo p {
+            margin: 0;
+            padding-bottom: 5px;
+            cursor: pointer;
+        }
+
+        #contactInfo p:hover {
+            color: #f98500;
+        }
+
+        #contactInfoSm {
+            display: none;
+        }
+
+        .video-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 150px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        .video-container {
+            position: relative;
+            max-width: 800px;
+            max-height: 450px;
+            border-radius: 5px;
+            overflow: hidden;
+          }
+
+          .unmute-audio {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 150%);
+            background: #f98500;
+            color: #000;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 2;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            transition: 0.5s ease;
+          }
+
+          .unmute-audio:hover {
+            background-color: #ffa500;
+            color: #fff;
+          }
+      
+          .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            display: none;
+            transition: 0.5s ease;
+            z-index: 1;
+          }
+
+          .overlay:hover {
+            color: #f98500;
+          }
+
+          .overview {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+            padding: 40px 200px;
+          }
+
+          .overview h1 {
+            font-size: 32px;
+          }
+
+          .overview h2 {
+            font-size: 24;
+          }
+
+          .overview p {
+            font-size: 22px;
+          }
+
+    
+
+
+          .cart-orange {
+            color: #f98500;
+          }
+
+          .on-blue {
+            color: #29abe2;
+          }
+
+
+
+          /* Responsiveness for small screens */
+
+          @media screen and (max-width: 1200px) {
+            .overview {
+                padding: 40px 80px;
+              }
+
+            
+          }
+
+          @media screen and (max-width: 768px) {
+            
+
+            .overview {
+                padding: 40px 60px;
+              }
+            
+            .overview h1 {
+                font-size: 24px;
+                margin-bottom: 10px;
+              }
+
+              .overview h2 {
+                font-size: 18px;
+              }
+
+              .overview p {
+                font-size: 14px;
+              }
+
+            
+          }
+
+
+          @media screen and (max-width: 540px) {
+
+            header {
+                flex-direction: column;
+                padding: 20px 20px;
+                height: 80px;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+
+            .logo-invest {
+                width: 100%;
+
+            }
+    
+            #logo {
+                width: 60px; /* Adjust the size as needed */
+                height: auto;
+            }
+    
+            
+
+            #contactInfoSm {
+                display: flex;
+                flex-direction: row;
+            }
+    
+            #contactInfo {
+                display: none;
+            }
+
+    
+            #contactInfoSm p {
+                margin: 0;
+                padding-top: 10px;
+                font-size: 14px;
+                cursor: pointer;
+            }
+            .phone {
+                padding-right: 30px;
+            }
+    
+            #contactInfoSm p:hover {
+                color: #f98500;
+            }
+
+            .unmute-audio {
+                transform: translate(-50%, 120%);
+                padding: 5px 10px;
+                font-size: 14px;
+                border-radius: 3px;
+              }
+
+              .overview {
+                padding: 30px 20px;
+              }
+    
+              .overview h1 {
+                font-size: 24px;
+                margin-bottom: 10px;
+              }
+
+              .overview h2 {
+                font-size: 18px;
+              }
+
+              .overview p {
+                font-size: 14px;
+              }
+            
+          }
