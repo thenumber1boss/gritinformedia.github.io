@@ -6,7 +6,7 @@
             height: 100%;
         }
 
-        body h1, h2, h3, h4, h5, h6, p, ol {
+        body h1, h2, h3, h4, h5, h6, p, ol, ul {
             margin-top: 0;
         }
 
@@ -196,6 +196,92 @@
         }
 
 
+        .invest-hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .hero-img-container {
+            max-width: 800px;
+            margin-top: 140px;
+            height: auto;
+            border-radius: 3px;
+            overflow: hidden;
+            
+
+        }
+
+        .hero-img-container img {
+            display: flex;
+            width: 100%;
+            height: auto;
+        }
+
+        .investment-category li {
+            font-size: 18px;
+            padding-bottom: 10px;
+        }
+
+        .earnings-block {
+            padding: 20px 10px;
+            background-color: rgba(41, 171, 226, 0.1);
+            border-radius: 5px;
+
+        }
+
+        .earnings {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            max-width: 800px;
+
+        }
+
+        .earnings-check {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .earnings label {
+            padding-right: 10px;
+            font-size: 22px;
+        }
+
+        .earnings select {
+            font-size: 22px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        
+        .graph-btn {
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            max-width: 800px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .graph-btn button {
+            background-color: rgba(41, 171, 226, 0.3);
+            padding: 10px 5px;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: 0.5s ease;
+        }
+
+        .graph-btn button:hover {
+            background-color: rgba(41, 171, 226, 0.7);
+        }
+
+
+        
+
+
 
           /* Responsiveness for small screens */
 
@@ -204,6 +290,17 @@
                 padding: 40px 80px;
               }
 
+              .earnings label {
+                padding-right: 10px;
+                font-size: 18px;
+            }
+    
+            .earnings select {
+                font-size: 18px;
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+            
             
           }
 
@@ -231,7 +328,18 @@
                 font-size: 18px;
               }
 
+              .earnings label {
+                padding-right: 10px;
+                font-size: 16px;
+            }
+    
+            .earnings select {
+                font-size: 16px;
+                padding: 3px 7px;
+                cursor: pointer;
+            }
             
+
           }
 
 
@@ -307,5 +415,38 @@
               }
             footer {
                 font-size: 14px;
+            }
+
+            .earnings {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                max-width: 800px;
+    
+            }
+
+            .earnings-check {
+                flex-direction: column;
+            }
+
+            .earnings label {
+                padding-bottom: 10px;
+                font-size: 14px;
+            }
+    
+            .earnings select {
+                font-size: 14px;
+                padding: 3px 5px;
+                cursor: pointer;
+                margin-bottom: 20px;
+            }
+
+            .graph-btn {
+                margin-top: 0;
+            }
+            
+            .investment-category li {
+                font-size: 14px;
+                padding-bottom: 10px;
             }
           }

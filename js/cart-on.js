@@ -37,3 +37,6 @@ const video = document.getElementById('myVideo');
 
     // Observe the video element
     observer.observe(video);
+
+
+     

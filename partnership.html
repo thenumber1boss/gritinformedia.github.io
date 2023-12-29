@@ -19,6 +19,8 @@
 
 
     <link href="css/cart-on.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/partnership.js" type="text/javascript"></script>
 </head>
 <body>
     <header>
@@ -41,9 +43,176 @@
         </div>
     </header>
 
+    <div class="invest-hero">
+        <div class="hero-img-container">
+            <img src="img/cart-on-invest.png" alt="invest in cart-on">
+        </div>
+    </div>
 
+    <section class="investment-intro overview">
+        <div><h2>Redefine the Future of Shopping</h2></div>
+        <p>
+            At Grit Informed Media, we believe in creating solutions.
+            Your investment in CartOn is not just a financial commitment; it's an endorsement of a platform that seeks
+            to create a vibrant, community-driven marketplace where local vendors thrive and users experience
+            a more personalized and efficient shopping journey.
+        </p>
+        <p>
+            As an investor, you play a crucial role in bringing this vision to life. Join us on this exciting journey
+            to redefine the online shopping experience and make a lasting impact on the future of e-commerce.
+        </p>
+        <p>
+            Explore our investment options below and discover how you can be part of the CartOn success story.
+        </p>
+    </section>
+
+
+        <!-- Investment Section - Silver -->
+        <section class="investment-category silver overview">
+            <h3>Silver Category</h3>
+            <p>Investment option: ₦250,000, #500,000, and ₦1,000,000</p>
+            <p>Return Rates:</p>
+            <ul>
+                <li>Year 1: 14%</li>
+                <li>Year 2: 25%</li>
+                <li>Year 3: 50%</li>
+                <li>Year 4: 80%</li>
+            </ul>
+            <p>
+                Investors in the Silver category enjoy competitive returns on their investment,
+                with the flexibility to withdraw funds and returns at any given year. By the end of the 4th year,
+                investors can realize a substantial 170% return on their initial investment.
+            </p>
+            <p>
+                Visualize your potential earnings below.
+            </p>
+
+            <div class="earnings-block">
+                <div class="earnings">
+                <div class="earnings-check">
+                <label for="silverInvestmentAmount">Investment Amount:</label>
+                <select id="silverInvestmentAmount">
+                    <option value="250000">₦250,000</option>
+                    <option value="500000">₦500,000</option>
+                    <option value="1000000">₦1,000,000</option>
+                    <!-- Add other options as needed -->
+                </select>
+            </div>
+            <div class="earnings-check">
+                <label for="silverInvestmentDuration">Investment Duration (in years):</label>
+                <select id="silverInvestmentDuration">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            </div>
+            <div class="graph-btn">
+            <button id="silverBtnGenerateGraph">Generate Graph</button>
+            </div>
+            <canvas id="silverInvestmentChart" width="600" height="400" style="display: none;"></canvas>
+        </div>
+    </section>
+    
+
+
+<!-- Investment Section - Gold -->
+<section class="investment-category gold overview">
+    <h2>Gold Category</h2>
+    <p>Investment option: ₦2,000,000</p>
+    <p>Return Rates:</p>
+    <ul>
+        <li>Year 1: 0%</li>
+        <li>Year 2: 12%</li>
+        <li>Year 3: 25%</li>
+        <li>Year 4: 45%</li>
+    </ul>
+    <p>Profit Sharing: 5% after business breakeven for 5 years</p>
+    <p>
+        Investors in the Gold category enjoy competitive returns on their investment,
+        with the added advantage of profit sharing after business breakeven. The profit sharing
+        continues for 5 years, providing an extra layer of potential earnings. Investors have
+        the flexibility to withdraw funds and returns after the second year.
+    </p>
+    <p class="hr-space-top">
+        Visualize your potential earnings below.
+    </p>
+    <div class="earnings-block">
+        <div class="earnings">
+    <div class="earnings-check">
+        <label for="goldInvestmentAmount">Investment Amount:</label>
+        <select id="goldInvestmentAmount">
+            <option value="2000000">₦2,000,000</option>
+        </select>
+    </div>
+    <div class="earnings-check">
+        <label for="goldInvestmentDuration">Investment Duration (in years):</label>
+        <select id="goldInvestmentDuration">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+    </div>
+    </div>
+    <div class="graph-btn">
+    <button id="goldBtnGenerateGraph">Generate Graph</button>
+    </div>
+    <canvas id="goldInvestmentChart" width="600" height="400" style="display: none;"></canvas>
+</div>
+</section>
+
+
+<section class="investment-category platinum overview">
+    <h2>Platinum Category</h2>
+    <p>Investment option: ₦5,000,000</p>
+    <p>Return Rates:</p>
+    <ul>
+        <li>Year 1: 0%</li>
+        <li>Year 2: 10%</li>
+        <li>Year 3: 25%</li>
+        <li>Year 4: 45%</li>
+    </ul>
+    <p>Profit Sharing: 10% after business breakeven for 5 years</p>
+    <p>
+        Investors in the Platinum category enjoy a steady progression of returns on their investment,
+        with the added advantage of a 10% profit sharing after business breakeven. The profit sharing
+        continues for 5 years, providing an additional source of potential earnings. Investors can
+        withdraw funds and returns after the second year.
+    </p>
+    <p class="hr-space-top">
+        Visualize your potential earnings below.
+    </p>
+    <div  class="earnings-block">
+    <div class="earnings">
+    <div class="earnings-check">
+        <label for="platinumInvestmentAmount">Investment Amount:</label>
+        <select id="platinumInvestmentAmount">
+            <option value="5000000">₦5,000,000</option>
+        </select>
+    </div>
+    <div class="earnings-check">
+        <label for="platinumInvestmentDuration">Investment Duration (in years):</label>
+        <select id="platinumInvestmentDuration">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+    </div>
+    </div>
+    
+    <div class="graph-btn"><button id="platinumBtnGenerateGraph">Generate Graph</button></div>
+    <canvas id="platinumInvestmentChart" width="600" height="400" style="display: none;"></canvas>
+</div>
+</section>
 
     
+    
+
+
+
     <footer>
         <div class="copyright">
           <p>&copy; 2023 <a href="https://gritinformedia.tech" style="color: #800000; text-decoration: none;">Grit Informed Media </a><span>RC.7169860</span> All rights reserved.</p>
@@ -51,7 +220,6 @@
       </footer>
       <!-- Rest of your website content goes here -->
   
-  
-      <script src="js/cart-on.js" type="text/javascript"></script>
   </body>
   </html>
+
