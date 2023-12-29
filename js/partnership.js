@@ -19,12 +19,9 @@ function showHideCanvas(category) {
 // Function to generate graph with loading effect and animation
 function generateGraph(amount, duration, chartId, returnRates) {
 
-    // Set timeout to control the duration of the loading effect
-    setTimeout(() => {
         // Generate the actual graph with real data after the loading effect
         generateActualGraph(amount, duration, chartId, returnRates);
-    }, 500); // Adjust the duration (in milliseconds) as needed
-}
+    }
 
 function generateActualGraph(amount, duration, chartId, returnRates) {
     const investmentReturns = [];
