@@ -10,6 +10,23 @@
             margin-top: 0;
         }
 
+        .limited-category {
+          display: flex;
+          flex-direction: row;
+        }
+
+
+        .limited {
+          background-color: #ff0000;
+          color: #fff;
+          border-radius: 3px;
+          padding: 2px 8px;
+          padding-top: 6px;
+          margin-left: 10px;
+          text-align: center;
+        }
+
+      
         .padding-top {
             padding-top: 40px;
         }
@@ -224,6 +241,11 @@
             padding-bottom: 10px;
         }
 
+        .disclaimer {
+          color: rgba(0, 0, 0, 0.3);
+          font-style: italic;
+        }
+
         .earnings-block {
             padding: 20px 10px;
             background-color: rgba(41, 171, 226, 0.1);
@@ -278,6 +300,79 @@
             background-color: rgba(41, 171, 226, 0.7);
         }
 
+      
+#contact {
+  display: flex;
+          flex-direction: column;
+          max-width: 100%;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+          border-radius: 4px;
+          padding-bottom: 20px;
+          margin: 0;
+  background-color: rgba(41, 171, 226, 0.1);
+}
+
+#contact .form #sendmessage {
+  color: #800000;
+  border: 1px solid #fff;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact .form #errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
+  display: block;
+}
+
+#contact .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 5px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#contact .form input, #contact .form textarea {
+  border-radius: 4px;
+  box-shadow: none;
+  max-width: 300px;
+  overflow: auto;
+  font-size: 14px;
+  padding: 10px 25px;
+  margin-bottom: 20px;
+  border-style: none;
+}
+
+#contact .form button[type="submit"] {
+  background-color: #f98500;
+            color: #000;
+            padding: 10px 25px;
+            border: 1px solid #f98500;
+            border-radius: 2px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.5s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#contact .form button[type="submit"]:hover {
+  background-color: #ffa500;
+  color: #fff;
+}
 
         
 

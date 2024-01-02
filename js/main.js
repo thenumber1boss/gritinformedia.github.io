@@ -295,6 +295,60 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.querySelector('form');
+
+  form.addEventListener('submit', function (event) {
+      // Flag to track if there are validation errors
+      let hasErrors = false;
+
+      // Validation function
+      function validateField(field, rule, errorMsg) {
+          const value = field.value.trim();
+
+          if (rule === 'required' && value === '') {
+              showError(field, errorMsg);
+              hasErrors = true;
+          } else if (rule === 'email' && !isValidEmail(value)) {
+              showError(field, errorMsg);
+              hasErrors = true;
+          } else if (rule.startsWith('minlen:') && value.length < parseInt(rule.split(':')[1])) {
+              showError(field, errorMsg);
+              hasErrors = true;
+          }
+      }
+
+      // Show error message and prevent form submission
+      function showError(field, errorMsg) {
+          const validationDiv = field.nextElementSibling;
+          validationDiv.innerHTML = errorMsg;
+          validationDiv.style.display = 'block';
+      }
+
+      // Check if the email is valid
+      function isValidEmail(email) {
+          // A simple email validation regex, you might want to use a more robust one
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          return emailRegex.test(email);
+      }
+
+      // Reset error messages
+      const errorMessages = document.querySelectorAll('.validation');
+      errorMessages.forEach(message => message.style.display = 'none');
+
+      // Validate each field
+      validateField(form.elements['name'], 'required', 'Please enter your name.');
+      validateField(form.elements['email'], 'email', 'Please enter a valid email address.');
+      validateField(form.elements['subject'], 'minlen:4', 'Please enter a subject with at least 4 characters.');
+      validateField(form.elements['message'], 'required', 'Please write something for us.');
+
+      // Prevent form submission if there are validation errors
+      if (hasErrors) {
+          event.preventDefault();
+      }
+  });
+});
+
 
 
 
