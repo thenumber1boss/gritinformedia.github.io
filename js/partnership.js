@@ -77,7 +77,7 @@ function generateActualGraph(amount, duration, chartId, returnRates) {
 document.getElementById('silverBtnGenerateGraph').addEventListener('click', function () {
     const amount = parseFloat(document.getElementById('silverInvestmentAmount').value) || 0;
     const duration = parseInt(document.getElementById('silverInvestmentDuration').value) || 0;
-    const returnRates = [0.14, 0.25, 0.50, 0.80];
+    const returnRates = [0.14, 0.25, 0.30, 0.40];
     generateGraph(amount, duration, 'silverInvestmentChart', returnRates);
     showHideCanvas('silver');
 });
