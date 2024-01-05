@@ -85,7 +85,7 @@ document.getElementById('silverBtnGenerateGraph').addEventListener('click', func
 document.getElementById('goldBtnGenerateGraph').addEventListener('click', function () {
     const amount = parseFloat(document.getElementById('goldInvestmentAmount').value) || 0;
     const duration = parseInt(document.getElementById('goldInvestmentDuration').value) || 0;
-    const returnRates = [0, 0.14, 0.25, 0.35];
+    const returnRates = [0, 0.12, 0.25, 0.35];
     generateGraph(amount, duration, 'goldInvestmentChart', returnRates);
     showHideCanvas('gold');
 });
@@ -93,7 +93,7 @@ document.getElementById('goldBtnGenerateGraph').addEventListener('click', functi
 document.getElementById('platinumBtnGenerateGraph').addEventListener('click', function () {
     const amount = parseFloat(document.getElementById('platinumInvestmentAmount').value) || 0;
     const duration = parseInt(document.getElementById('platinumInvestmentDuration').value) || 0;
-    const returnRates = [0, 0.14, 0.20, 0.30];
+    const returnRates = [0, 0.10, 0.20, 0.30];
     generateGraph(amount, duration, 'platinumInvestmentChart', returnRates);
     showHideCanvas('platinum');
 });
