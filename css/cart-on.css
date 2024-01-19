@@ -213,12 +213,22 @@
         }
 
 
-        .invest-hero {
+        .invest-hero,
+        .vendor-hero{
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
+            padding: 20px; 
         }
+
+
+        .vendor-dashboard {
+          display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
 
         .hero-img-container {
             max-width: 800px;
@@ -226,17 +236,25 @@
             height: auto;
             border-radius: 3px;
             overflow: hidden;
-            
-
         }
 
-        .hero-img-container img {
+        .vendor-dashboard-img {
+          max-width: 800px;
+          margin: 30px 0;
+          height: auto;
+          border-radius: 3px;
+          overflow: hidden;
+        }
+
+        .hero-img-container img,
+        .vendor-dashboard-img img {
             display: flex;
             width: 100%;
             height: auto;
         }
 
-        .investment-category li {
+        .investment-category li,
+        .vendor-benefits li {
             font-size: 18px;
             padding-bottom: 10px;
         }
@@ -540,7 +558,8 @@
                 margin-top: 0;
             }
             
-            .investment-category li {
+            .investment-category li,
+            .vendor-benefits li {
                 font-size: 14px;
                 padding-bottom: 10px;
             }
